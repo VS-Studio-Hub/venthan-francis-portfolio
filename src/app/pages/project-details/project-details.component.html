@@ -69,14 +69,6 @@
             <p>{{ project.details.authenticationSecurity }}</p>
             <p>{{ project.details.deployment }}</p>
           </div>
-          <div class="detail-card reveal">
-            <h2>What I Learned</h2>
-            <ul>
-              @for (learning of project.details.whatILearned; track learning) {
-                <li>{{ learning }}</li>
-              }
-            </ul>
-          </div>
         </section>
       </article>
     } @else {
