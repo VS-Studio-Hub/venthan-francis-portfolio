@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" role="img" aria-labelledby="title desc">
+  <title id="title">MJAV Traders Business Application placeholder screenshot</title>
+  <desc id="desc">Professional placeholder for a business web application with products, customers, inventory, and transactions.</desc>
+  <rect width="1280" height="800" fill="#f7f8fb"/>
+  <rect x="80" y="80" width="1120" height="640" rx="12" fill="#ffffff" stroke="#d9e2ec"/>
+  <rect x="120" y="124" width="1040" height="72" rx="8" fill="#1f5eff"/>
+  <text x="152" y="170" fill="#ffffff" font-family="Arial, sans-serif" font-size="28" font-weight="700">MJAV Traders Operations</text>
+  <rect x="120" y="244" width="232" height="160" rx="8" fill="#eef3f8"/>
+  <rect x="384" y="244" width="232" height="160" rx="8" fill="#e7f7f4"/>
+  <rect x="648" y="244" width="232" height="160" rx="8" fill="#fff6e3"/>
+  <rect x="912" y="244" width="248" height="160" rx="8" fill="#e8f0ff"/>
+  <rect x="120" y="460" width="1040" height="188" rx="8" fill="#f4f7fb" stroke="#d9e2ec"/>
+  <text x="152" y="306" fill="#132033" font-family="Arial, sans-serif" font-size="24" font-weight="700">Products</text>
+  <text x="416" y="306" fill="#132033" font-family="Arial, sans-serif" font-size="24" font-weight="700">Customers</text>
+  <text x="680" y="306" fill="#132033" font-family="Arial, sans-serif" font-size="24" font-weight="700">Inventory</text>
+  <text x="944" y="306" fill="#132033" font-family="Arial, sans-serif" font-size="24" font-weight="700">Transactions</text>
+  <text x="152" y="532" fill="#132033" font-family="Arial, sans-serif" font-size="26" font-weight="700">REST API and SQL Workflow Placeholder</text>
+</svg>

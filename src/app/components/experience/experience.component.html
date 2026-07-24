@@ -1,0 +1,34 @@
+<section id="experience" class="section section-anchor">
+  <div class="container">
+    <div class="section-heading reveal">
+      <p class="eyebrow">Experience</p>
+      <h2>Freelance and work experience.</h2>
+    </div>
+    <div class="timeline">
+      @for (experience of data.experiences; track experience.role + experience.organization) {
+        <article class="timeline-item reveal" [class.supporting]="experience.priority === 'supporting'">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>{{ experience.role }}</h3>
+                <p>{{ experience.organization }}</p>
+              </div>
+              <span>{{ experience.dates }}</span>
+            </div>
+            <div class="tag-list compact">
+              @for (technology of experience.technologies.slice(0, 5); track technology) {
+                <span>{{ technology }}</span>
+              }
+            </div>
+            <ul>
+              @for (responsibility of experience.responsibilities.slice(0, 2); track responsibility) {
+                <li>{{ responsibility }}</li>
+              }
+            </ul>
+          </div>
+        </article>
+      }
+    </div>
+  </div>
+</section>

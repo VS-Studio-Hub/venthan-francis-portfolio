@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" role="img" aria-labelledby="title desc">
+  <title id="title">Additional software and game development project placeholder</title>
+  <desc id="desc">Clean placeholder representing UI development, debugging, systems thinking, and version control experience.</desc>
+  <rect width="1280" height="800" fill="#f4f7fb"/>
+  <rect x="96" y="80" width="1088" height="640" rx="12" fill="#ffffff" stroke="#d9e2ec"/>
+  <rect x="148" y="132" width="984" height="92" rx="8" fill="#132033"/>
+  <text x="188" y="190" fill="#ffffff" font-family="Arial, sans-serif" font-size="30" font-weight="700">Software and Game Development Project</text>
+  <rect x="148" y="286" width="292" height="290" rx="8" fill="#e8f0ff"/>
+  <rect x="494" y="286" width="292" height="290" rx="8" fill="#e7f7f4"/>
+  <rect x="840" y="286" width="292" height="290" rx="8" fill="#fff6e3"/>
+  <text x="184" y="360" fill="#132033" font-family="Arial, sans-serif" font-size="24" font-weight="700">Programming</text>
+  <text x="530" y="360" fill="#132033" font-family="Arial, sans-serif" font-size="24" font-weight="700">Debugging</text>
+  <text x="876" y="360" fill="#132033" font-family="Arial, sans-serif" font-size="24" font-weight="700">Team Workflow</text>
+</svg>

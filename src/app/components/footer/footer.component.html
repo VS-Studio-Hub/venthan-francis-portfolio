@@ -1,0 +1,19 @@
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <strong>Venthan Francis</strong>
+      <span>Full-Stack Developer</span>
+    </div>
+    <div class="footer-links">
+      @for (link of data.socialLinks; track link.label) {
+        <a [href]="link.url" target="_blank" rel="noopener" [attr.aria-label]="link.ariaLabel">
+          <i class="bi" [class]="link.icon" aria-hidden="true"></i>
+        </a>
+      }
+      <button class="icon-btn" type="button" (click)="backToTop()" aria-label="Back to top">
+        <i class="bi bi-arrow-up" aria-hidden="true"></i>
+      </button>
+    </div>
+    <small>Copyright {{ year }} Venthan Francis. All rights reserved.</small>
+  </div>
+</footer>

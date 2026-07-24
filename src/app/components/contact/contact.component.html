@@ -1,0 +1,77 @@
+<section id="contact" class="section section-anchor">
+  <div class="container">
+    <div class="section-heading reveal">
+      <p class="eyebrow">Contact</p>
+      <h2>Let's talk about your developer role.</h2>
+    </div>
+    <div class="row g-3">
+      <div class="col-lg-5 reveal">
+        <div class="contact-panel">
+          <h3>Professional Links</h3>
+          <p>Fast ways to reach me or review my work.</p>
+          <div class="contact-links">
+            @for (link of data.socialLinks; track link.label) {
+              <a [href]="link.url" target="_blank" rel="noopener" [attr.aria-label]="link.ariaLabel">
+                <i class="bi" [class]="link.icon" aria-hidden="true"></i>
+                <span>{{ link.label }}</span>
+              </a>
+            }
+          </div>
+          <a class="btn btn-primary w-100" [href]="data.resumePath" target="_blank" download>
+            <i class="bi bi-download" aria-hidden="true"></i>
+            Download Resume
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-7 reveal reveal-delay">
+        <form class="contact-form" [formGroup]="contactForm" (ngSubmit)="submit()" novalidate>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label" for="name">Name</label>
+              <input id="name" class="form-control" type="text" formControlName="name" autocomplete="name" required>
+              @if (contactForm.controls.name.dirty && contactForm.controls.name.invalid) {
+                <small class="form-error">Enter your name.</small>
+              }
+            </div>
+            <div class="col-md-6">
+              <label class="form-label" for="email">Email</label>
+              <input id="email" class="form-control" type="email" formControlName="email" autocomplete="email" required>
+              @if (contactForm.controls.email.dirty && contactForm.controls.email.invalid) {
+                <small class="form-error">Enter a valid email address.</small>
+              }
+            </div>
+            <div class="col-12">
+              <label class="form-label" for="subject">Subject</label>
+              <input id="subject" class="form-control" type="text" formControlName="subject" required>
+              @if (contactForm.controls.subject.dirty && contactForm.controls.subject.invalid) {
+                <small class="form-error">Add a short subject.</small>
+              }
+            </div>
+            <div class="col-12">
+              <label class="form-label" for="message">Message</label>
+              <textarea id="message" class="form-control" rows="5" formControlName="message" required></textarea>
+              @if (contactForm.controls.message.dirty && contactForm.controls.message.invalid) {
+                <small class="form-error">Write a message with at least 20 characters.</small>
+              }
+            </div>
+          </div>
+          <button class="btn btn-primary mt-3" type="submit" [disabled]="isSubmitting()">
+            @if (isSubmitting()) {
+              <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+              Preparing Message
+            } @else {
+              <i class="bi bi-send" aria-hidden="true"></i>
+              Send Message
+            }
+          </button>
+          @if (successMessage()) {
+            <p class="form-success" role="status">{{ successMessage() }}</p>
+          }
+          @if (errorMessage()) {
+            <p class="form-error mt-3" role="alert">{{ errorMessage() }}</p>
+          }
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

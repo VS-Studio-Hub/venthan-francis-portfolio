@@ -1,0 +1,21 @@
+<section id="skills" class="section section-alt section-anchor">
+  <div class="container">
+    <div class="section-heading reveal">
+      <p class="eyebrow">Technical Skills</p>
+      <h2>Core technical skills.</h2>
+    </div>
+    <div class="skills-grid">
+      @for (category of data.skillCategories; track category.name) {
+        <article class="skill-card reveal">
+          <div class="card-icon"><i class="bi" [class]="category.icon" aria-hidden="true"></i></div>
+          <h3>{{ category.name }}</h3>
+          <div class="tag-list">
+            @for (skill of category.skills; track skill) {
+              <span>{{ skill }}</span>
+            }
+          </div>
+        </article>
+      }
+    </div>
+  </div>
+</section>

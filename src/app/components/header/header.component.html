@@ -1,0 +1,41 @@
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="navbar navbar-expand-xl" aria-label="Primary navigation">
+    <div class="container">
+      <button class="brand-button" type="button" (click)="navigateToSection('home')" aria-label="Go to home section">
+        <span class="brand-mark">VF</span>
+        <span>
+          <strong>Venthan Francis</strong>
+          <small>Full-Stack Developer</small>
+        </span>
+      </button>
+
+      <div class="header-actions">
+        <a class="btn btn-sm btn-primary d-none d-md-inline-flex" [href]="data.resumePath" target="_blank" download>
+          <i class="bi bi-download" aria-hidden="true"></i>
+          Resume
+        </a>
+        <button class="icon-btn" type="button" (click)="themeService.toggleTheme()" [attr.aria-label]="'Switch to ' + (themeService.theme() === 'light' ? 'dark' : 'light') + ' mode'">
+          <i class="bi" [class.bi-moon-stars]="themeService.theme() === 'light'" [class.bi-sun]="themeService.theme() === 'dark'" aria-hidden="true"></i>
+        </button>
+        <button class="icon-btn d-xl-none" type="button" (click)="toggleMenu()" [attr.aria-expanded]="isMenuOpen()" aria-controls="primary-menu" aria-label="Toggle navigation menu">
+          <i class="bi" [class.bi-list]="!isMenuOpen()" [class.bi-x-lg]="isMenuOpen()" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div id="primary-menu" class="nav-menu" [class.open]="isMenuOpen()">
+        @for (item of navItems; track item.sectionId) {
+          <button
+            type="button"
+            class="nav-link-button"
+            [class.active]="activeSection() === item.sectionId"
+            (click)="navigateToSection(item.sectionId)"
+          >
+            {{ item.label }}
+          </button>
+        }
+      </div>
+    </div>
+  </nav>
+</header>

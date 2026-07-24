@@ -1,0 +1,13 @@
+<section id="projects" class="section section-alt section-anchor">
+  <div class="container">
+    <div class="section-heading reveal">
+      <p class="eyebrow">Freelance Work</p>
+      <h2>Recent freelance work.</h2>
+    </div>
+    <div class="project-grid featured">
+      @for (project of featuredProjects; track project.slug) {
+        <app-project-card [project]="project"></app-project-card>
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" role="img" aria-labelledby="title desc">
+  <title id="title">Wedding Invitation Website placeholder screenshot</title>
+  <desc id="desc">Elegant event website placeholder for details, venue, RSVP, maps, gallery, calendar, and music controls.</desc>
+  <rect width="1280" height="800" fill="#f8f6f2"/>
+  <rect x="96" y="72" width="1088" height="656" rx="12" fill="#ffffff" stroke="#ded7cc"/>
+  <rect x="140" y="118" width="1000" height="220" rx="8" fill="#132033"/>
+  <text x="180" y="212" fill="#ffffff" font-family="Arial, sans-serif" font-size="34" font-weight="700">Wedding Invitation Website</text>
+  <text x="180" y="262" fill="#dce6f3" font-family="Arial, sans-serif" font-size="22">Event details, RSVP, maps, gallery, calendar, and music controls</text>
+  <rect x="140" y="386" width="300" height="210" rx="8" fill="#eef3f8"/>
+  <rect x="490" y="386" width="300" height="210" rx="8" fill="#e7f7f4"/>
+  <rect x="840" y="386" width="300" height="210" rx="8" fill="#fff6e3"/>
+  <text x="174" y="456" fill="#132033" font-family="Arial, sans-serif" font-size="25" font-weight="700">Venue</text>
+  <text x="524" y="456" fill="#132033" font-family="Arial, sans-serif" font-size="25" font-weight="700">RSVP</text>
+  <text x="874" y="456" fill="#132033" font-family="Arial, sans-serif" font-size="25" font-weight="700">Gallery</text>
+</svg>

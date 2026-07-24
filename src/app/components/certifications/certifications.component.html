@@ -1,0 +1,19 @@
+<section id="certifications" class="section section-alt section-anchor">
+  <div class="container">
+    <div class="section-heading reveal">
+      <p class="eyebrow">Certifications</p>
+      <h2>Reusable certification records ready for verified credential details.</h2>
+    </div>
+    <div class="cert-grid">
+      @for (certification of data.certifications; track certification.name) {
+        <article class="cert-card reveal">
+          <i class="bi bi-award" aria-hidden="true"></i>
+          <h3>{{ certification.name }}</h3>
+          <p>{{ certification.issuer }}</p>
+          <span>{{ certification.completionDate }}</span>
+          <small>{{ certification.credentialUrl }}</small>
+        </article>
+      }
+    </div>
+  </div>
+</section>

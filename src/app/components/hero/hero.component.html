@@ -1,0 +1,64 @@
+<section id="home" class="hero-section section-anchor">
+  <div class="container">
+    <div class="hero-layout">
+      <div class="hero-copy-column reveal">
+        <div class="hero-intro-row">
+          <div>
+            <p class="eyebrow">Full-Stack Developer</p>
+            <h1>Hi, I'm <span class="hero-name">Venthan Francis</span></h1>
+          </div>
+          <div class="hero-mobile-photo" aria-hidden="true">
+            <img [src]="data.profilePhotoPath" alt="" width="112" height="112">
+          </div>
+        </div>
+        <p class="hero-title">Full-Stack Developer building Java, Spring Boot, Angular, and SQL applications.</p>
+        <p class="hero-copy">
+          I turn business workflows into clean web platforms with secure APIs, responsive UI, and deployment-ready structure.
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-primary btn-lg" type="button" (click)="scrollTo('projects')">
+            <i class="bi bi-folder2-open" aria-hidden="true"></i>
+            Projects
+          </button>
+          <a class="btn btn-outline-primary btn-lg" [href]="data.resumePath" target="_blank" download>
+            <i class="bi bi-download" aria-hidden="true"></i>
+            Resume
+          </a>
+          <button class="btn btn-link btn-lg" type="button" (click)="scrollTo('contact')">
+            Contact
+          </button>
+        </div>
+        <div class="social-row" aria-label="Professional links">
+          @for (link of data.socialLinks; track link.label) {
+            <a [href]="link.url" target="_blank" rel="noopener" [attr.aria-label]="link.ariaLabel">
+              <i class="bi" [class]="link.icon" aria-hidden="true"></i>
+              <span>{{ link.label }}</span>
+            </a>
+          }
+        </div>
+        <div class="hero-proof-row" aria-label="Portfolio proof points">
+          <span>B2B platforms</span>
+          <span>Secure REST APIs</span>
+          <span>Angular UI</span>
+        </div>
+      </div>
+
+      <div class="hero-side-column reveal reveal-delay">
+        <div class="hero-panel" aria-label="Portfolio highlights">
+          <div class="profile-photo-wrap">
+            <img [src]="data.profilePhotoPath" alt="Venthan Francis professional profile photo" width="320" height="400">
+          </div>
+          <span class="profile-caption">Venthan Francis</span>
+          <p>Focus</p>
+          <ul>
+            <li>Java + Spring Boot APIs</li>
+            <li>Angular + TypeScript UI</li>
+            <li>SQL data workflows</li>
+            <li>AWS + GitHub Actions</li>
+          </ul>
+          <span>Software Developer in Canada | Open to developer roles</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

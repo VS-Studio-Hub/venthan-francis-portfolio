@@ -1,0 +1,27 @@
+<article class="project-card reveal" [class.compact]="compact">
+  @if (!compact) {
+    <div class="project-image-wrap">
+      <img [src]="project.screenshot" [alt]="project.screenshotAlt" loading="lazy">
+    </div>
+  }
+  <div class="project-body">
+    <div class="project-topline">
+      <span class="project-kicker">{{ project.category }}</span>
+    </div>
+    <h3>{{ project.name }}</h3>
+    <p>{{ project.overview }}</p>
+    <span class="project-status">{{ project.status }}</span>
+
+    <div class="tag-list compact">
+      @for (technology of project.technologies.slice(0, compact ? 3 : 5); track technology) {
+        <span>{{ technology }}</span>
+      }
+    </div>
+
+    <div class="project-actions">
+      <a class="btn btn-outline-primary btn-sm" [routerLink]="['/projects', project.slug]">
+        View details
+      </a>
+    </div>
+  </div>
+</article>
