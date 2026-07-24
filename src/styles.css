@@ -926,7 +926,7 @@ p {
 
 .detail-page {
   min-height: 70vh;
-  padding-top: 4rem;
+  padding-top: 3rem;
 }
 
 .back-link {
@@ -941,18 +941,21 @@ p {
 .detail-hero {
   align-items: center;
   display: grid;
-  gap: 2rem;
+  gap: 1.5rem;
   grid-template-columns: 1fr;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
   overflow: hidden;
-  padding: 1.4rem;
+  padding: 1.2rem;
 }
 
 .detail-hero h1 {
-  max-width: 14ch;
+  font-size: 2.25rem;
+  line-height: 1.04;
+  max-width: 12ch;
 }
 
 .detail-hero img {
+  background: var(--surface-soft);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   width: 100%;
@@ -974,8 +977,13 @@ p {
   padding: 1.25rem;
 }
 
+.detail-card p + p {
+  margin-top: 0.75rem;
+}
+
 .detail-card h2 {
-  font-size: 1.25rem;
+  font-size: 1.12rem;
+  margin-bottom: 0.25rem;
 }
 
 .detail-card.full {

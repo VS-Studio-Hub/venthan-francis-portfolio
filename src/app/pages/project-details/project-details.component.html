@@ -14,8 +14,18 @@
             <p>{{ project.overview }}</p>
             <div class="detail-actions">
               <span class="project-status static">{{ project.status }}</span>
-              <span class="placeholder-link">{{ project.githubUrl }}</span>
-              <span class="placeholder-link">{{ project.liveDemoUrl }}</span>
+              @if (project.githubUrl.startsWith('http')) {
+                <a class="btn btn-outline-primary btn-sm" [href]="project.githubUrl" target="_blank" rel="noopener">
+                  <i class="bi bi-github" aria-hidden="true"></i>
+                  GitHub
+                </a>
+              }
+              @if (project.liveDemoUrl.startsWith('http')) {
+                <a class="btn btn-primary btn-sm" [href]="project.liveDemoUrl" target="_blank" rel="noopener">
+                  <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+                  Live Site
+                </a>
+              }
             </div>
           </div>
           <img [src]="project.screenshot" [alt]="project.screenshotAlt" loading="lazy">
@@ -31,18 +41,10 @@
             <p>{{ project.role }}</p>
           </div>
           <div class="detail-card reveal">
-            <h2>Goals</h2>
-            <ul>
-              @for (goal of project.details.goals; track goal) {
-                <li>{{ goal }}</li>
-              }
-            </ul>
-          </div>
-          <div class="detail-card reveal">
             <h2>Main Features</h2>
             <div class="feature-list expanded">
               @for (feature of project.features; track feature.label) {
-                <span [class]="'status-' + feature.status.toLowerCase().replace(' ', '-')">{{ feature.label }}: {{ feature.status }}</span>
+                <span [class]="'status-' + feature.status.toLowerCase().replace(' ', '-')">{{ feature.label }}</span>
               }
             </div>
           </div>
@@ -59,36 +61,13 @@
             <p>{{ project.details.frontendImplementation }}</p>
           </div>
           <div class="detail-card reveal">
-            <h2>Backend Implementation</h2>
+            <h2>Backend APIs</h2>
             <p>{{ project.details.backendImplementation }}</p>
           </div>
           <div class="detail-card reveal">
-            <h2>Database Design</h2>
-            <p>{{ project.details.databaseDesign }}</p>
-          </div>
-          <div class="detail-card reveal">
-            <h2>Authentication and Security</h2>
+            <h2>Security and Deployment</h2>
             <p>{{ project.details.authenticationSecurity }}</p>
-          </div>
-          <div class="detail-card reveal">
-            <h2>Deployment</h2>
             <p>{{ project.details.deployment }}</p>
-          </div>
-          <div class="detail-card reveal">
-            <h2>Challenges</h2>
-            <ul>
-              @for (challenge of project.details.challenges; track challenge) {
-                <li>{{ challenge }}</li>
-              }
-            </ul>
-          </div>
-          <div class="detail-card reveal">
-            <h2>Solutions</h2>
-            <ul>
-              @for (solution of project.details.solutions; track solution) {
-                <li>{{ solution }}</li>
-              }
-            </ul>
           </div>
           <div class="detail-card reveal">
             <h2>What I Learned</h2>
@@ -97,22 +76,6 @@
                 <li>{{ learning }}</li>
               }
             </ul>
-          </div>
-          <div class="detail-card reveal">
-            <h2>Future Improvements</h2>
-            <ul>
-              @for (improvement of project.details.futureImprovements; track improvement) {
-                <li>{{ improvement }}</li>
-              }
-            </ul>
-          </div>
-          <div class="detail-card full reveal">
-            <h2>Screenshots and Placeholders</h2>
-            <div class="placeholder-grid">
-              @for (screenshot of project.details.screenshots; track screenshot) {
-                <div>{{ screenshot }}</div>
-              }
-            </div>
           </div>
         </section>
       </article>

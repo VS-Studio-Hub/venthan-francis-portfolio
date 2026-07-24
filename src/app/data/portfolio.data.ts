@@ -109,7 +109,7 @@ export const experiences: Experience[] = [
 export const projects: Project[] = [
   {
     slug: 'mjav-rubber-band-b2b-wholesale-platform',
-    name: 'MJAV Rubber Band Manufacture - B2B Wholesale Web Platform',
+    name: 'MJAV B2B Wholesale Platform',
     category: 'Full-Stack',
     status: 'Completed full-stack platform',
     featured: true,
@@ -134,7 +134,7 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/VS-Studio-Hub/mjav-rubber-band-company',
     liveDemoUrl: 'https://mjavrubberbands.com',
     screenshot: 'assets/images/project-b2b.svg',
-    screenshotAlt: 'Placeholder screenshot for the MJAV Rubber Band Manufacture B2B Wholesale Web Platform',
+    screenshotAlt: 'Preview graphic for the MJAV B2B Wholesale Platform',
     details: {
       businessProblem:
         'A rubber band manufacturing company needed a professional wholesale platform where public visitors could discover products and approved customers could manage quotations, orders, invoices, and support requests securely.',
