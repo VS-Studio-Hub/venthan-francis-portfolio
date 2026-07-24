@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:github": "ng build --configuration production --base-href /portfolio/",
+    "build:github": "ng build --configuration production --base-href /venthan-francis-portfolio/",
     "postbuild:github": "node scripts/create-gh-pages-404.mjs",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"

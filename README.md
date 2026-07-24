@@ -7,7 +7,7 @@ This project is intentionally static. It does not include a Spring Boot backend,
 ## Features
 
 - Angular, TypeScript, HTML, CSS, and Bootstrap
-- Static GitHub Pages deployment with `/portfolio/` base URL
+- Static GitHub Pages deployment with `/venthan-francis-portfolio/` base URL
 - Hash-based routing for reliable project detail refreshes on GitHub Pages
 - Sticky responsive navigation with active-section highlighting
 - Light and dark mode
@@ -129,7 +129,7 @@ npm run build:github
 This builds with:
 
 ```text
-/portfolio/
+/venthan-francis-portfolio/
 ```
 
 as the base URL.
@@ -143,7 +143,7 @@ dist/portfolio/browser
 The `postbuild:github` script copies `index.html` to `404.html`. This helps GitHub Pages serve the Angular app if someone refreshes a route. The app also uses hash-based routing, so project detail URLs look like:
 
 ```text
-https://vs-studio-hub.github.io/portfolio/#/projects/mjav-traders-business-application
+https://vs-studio-hub.github.io/venthan-francis-portfolio/#/projects/mjav-rubber-band-b2b-wholesale-platform
 ```
 
 ## Replace the Resume
@@ -198,7 +198,7 @@ public/sitemap.xml
 Replace:
 
 ```text
-https://vs-studio-hub.github.io/portfolio/
+https://vs-studio-hub.github.io/venthan-francis-portfolio/
 ```
 
 with your real GitHub Pages URL.
@@ -364,7 +364,7 @@ git init
 git add .
 git commit -m "Build Angular portfolio for GitHub Pages"
 git branch -M main
-git remote add origin https://github.com/VS-Studio-Hub/portfolio.git
+git remote add origin https://github.com/VS-Studio-Hub/venthan-francis-portfolio.git
 git push -u origin main
 ```
 
@@ -477,7 +477,7 @@ If styles or images do not load on GitHub Pages:
 
 - Confirm the repository is named `portfolio`.
 - Confirm the build command is `npm run build:github`.
-- Confirm `base href` in the built `index.html` is `/portfolio/`.
+- Confirm `base href` in the built `index.html` is `/venthan-francis-portfolio/`.
 - Use asset paths like `assets/images/example.svg`, not `/assets/images/example.svg`.
 
 If refreshing a project detail page fails:
