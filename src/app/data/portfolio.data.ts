@@ -235,44 +235,53 @@ export const projects: Project[] = [
     status: 'Freelance web project',
     featured: true,
     overview:
-      'A responsive Django and Bootstrap event website for RSVP, maps, gallery, and guest information.',
+      'A responsive static wedding invitation site with a countdown timer, couple profiles, love story timeline, photo gallery, and venue details on Google Maps.',
     problemSolved:
-      'Gives guests a single mobile-friendly place for event details, venue directions, schedule information, and RSVP actions.',
-    role: 'Freelance web developer responsible for responsive pages, Django structure, UI behavior, and guest-facing features.',
+      'Gives guests a single mobile-friendly place for event details, venue directions, a countdown to the big day, and the couple\'s story, with no backend or database required.',
+    role: 'Freelance web developer responsible for responsive pages, UI behavior, and guest-facing features.',
     features: [
-      { label: 'Wedding event details', status: 'Completed' },
-      { label: 'Venue information', status: 'Completed' },
-      { label: 'Google Maps integration', status: 'Completed' },
-      { label: 'RSVP section', status: 'Completed' },
-      { label: 'Image gallery', status: 'Completed' },
-      { label: 'Save-to-calendar feature', status: 'Completed' },
-      { label: 'Background music controls', status: 'Completed' }
+      { label: 'Hero with save-the-date', status: 'Completed' },
+      { label: 'Wedding countdown timer', status: 'Completed' },
+      { label: 'Bride and groom profiles', status: 'Completed' },
+      { label: 'Love story timeline', status: 'Completed' },
+      { label: 'Photo gallery slider', status: 'Completed' },
+      { label: 'Wedding details with Google Maps', status: 'Completed' }
     ],
-    technologies: ['Django', 'Python', 'Bootstrap', 'HTML', 'CSS', 'JavaScript'],
-    githubUrl: '[Add GitHub URL]',
-    liveDemoUrl: '[Add live demo URL]',
-    screenshot: 'assets/images/project-wedding.svg',
-    screenshotAlt: 'Placeholder screenshot for the Wedding Invitation Website project',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+    githubUrl: 'https://github.com/VS-Studio-Hub/wedding-invitation-01',
+    liveDemoUrl: 'https://vs-studio-hub.github.io/wedding-invitation-01/',
+    screenshot: 'assets/images/project-wedding-home.png',
+    screenshotAlt: 'Home page of the wedding invitation website showing the hero section, couple names, and save-the-date button',
     details: {
       businessProblem:
-        'Guests needed quick access to event, venue, RSVP, calendar, and gallery information on mobile devices.',
+        'Guests needed quick access to event, venue, countdown, and gallery information on mobile devices, without the couple needing to manage a backend or CMS.',
       goals: [
         'Create a warm but usable event website.',
-        'Make venue and RSVP information easy to find.',
+        'Make venue and event-day information easy to find.',
         'Keep the experience responsive across phones, tablets, and desktops.'
       ],
       frontendImplementation:
-        'Bootstrap-based responsive pages, gallery UI, calendar action, map section, and music controls.',
+        'Built with HTML, CSS, and Bootstrap 5, with vanilla JavaScript powering the countdown timer, photo gallery slider, and save-the-date calendar action, styled with Google Fonts (Cormorant Garamond, Great Vibes).',
       backendImplementation:
-        'Django project structure used to organize templates and site behavior. [Confirm production backend details]',
-      databaseDesign: '[Confirm whether a database was used]',
+        'Fully static site with no backend; all wedding and event details are defined directly in the HTML and JavaScript.',
+      databaseDesign: 'No database is used; content is hardcoded in the static site.',
       authenticationSecurity: 'No user login required for the public invitation site.',
-      deployment: '[Add deployment details]',
-      challenges: ['[Add challenge]', '[Add challenge]'],
-      solutions: ['[Add solution]', '[Add solution]'],
-      whatILearned: ['Responsive event UI design', 'Django template organization', 'User-friendly mobile workflows'],
-      futureImprovements: ['Private RSVP handling', 'Optimized gallery images', 'Custom domain'],
-      screenshots: ['[Add project screenshot]', '[Add mobile screenshot]', '[Add live demo URL]']
+      deployment: 'Deployed as a static site on GitHub Pages.',
+      challenges: [
+        'Building a countdown timer and photo gallery slider without a JavaScript framework.',
+        'Keeping decorative imagery and fonts lightweight for fast mobile loading.'
+      ],
+      solutions: [
+        'Used vanilla JavaScript for the countdown and carousel logic.',
+        'Sized and optimized background and gallery images for mobile performance.'
+      ],
+      whatILearned: ['Responsive event UI design', 'Vanilla JavaScript interactivity', 'User-friendly mobile workflows'],
+      futureImprovements: ['RSVP form', 'Optimized gallery images', 'Custom domain'],
+      screenshots: [
+        'assets/images/project-wedding-couple.png',
+        'assets/images/project-wedding-story.png',
+        'assets/images/project-wedding-photos.png'
+      ]
     }
   },
   {
