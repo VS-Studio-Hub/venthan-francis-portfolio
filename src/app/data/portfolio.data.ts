@@ -133,8 +133,8 @@ export const projects: Project[] = [
     technologies: ['Angular', 'Bootstrap', 'Spring Boot', 'Spring Security', 'Java', 'MySQL', 'AWS', 'GitHub Actions'],
     githubUrl: 'https://github.com/VS-Studio-Hub/mjav-rubber-band-company',
     liveDemoUrl: 'https://mjavrubberbands.com',
-    screenshot: 'assets/images/project-b2b.svg',
-    screenshotAlt: 'Preview graphic for the MJAV B2B Wholesale Platform',
+    screenshot: 'assets/images/project-mjav-b2b-home.png',
+    screenshotAlt: 'Home page of the MJAV B2B Wholesale Platform showing the hero section and product catalogue preview',
     details: {
       businessProblem:
         'A rubber band manufacturing company needed a professional wholesale platform where public visitors could discover products and approved customers could manage quotations, orders, invoices, and support requests securely.',
@@ -172,7 +172,12 @@ export const projects: Project[] = [
         'GitHub Actions deployment workflows'
       ],
       futureImprovements: ['Reporting dashboard', 'Advanced quotation analytics', 'Improved notification workflows', 'Expanded admin audit history'],
-      screenshots: ['[Add project screenshot]', '[Add admin portal screenshot]', '[Add customer portal screenshot]']
+      screenshots: [
+        'assets/images/project-mjav-b2b-products.png',
+        'assets/images/project-mjav-b2b-enquiry.png',
+        'assets/images/project-mjav-b2b-admin.png',
+        'assets/images/project-mjav-b2b-customer-portal.png'
+      ]
     }
   },
   {

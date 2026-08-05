@@ -70,6 +70,17 @@
             <p>{{ project.details.deployment }}</p>
           </div>
         </section>
+
+        @if (project.details.screenshots.length && !project.details.screenshots[0].startsWith('[')) {
+          <section class="detail-card full reveal">
+            <h2>Screenshots</h2>
+            <div class="screenshot-gallery">
+              @for (shot of project.details.screenshots; track shot) {
+                <img [src]="shot" [alt]="project.name + ' screenshot'" loading="lazy">
+              }
+            </div>
+          </section>
+        }
       </article>
     } @else {
       <section class="detail-card">
