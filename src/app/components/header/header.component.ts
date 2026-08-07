@@ -27,6 +27,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
     { label: 'About', sectionId: 'about' },
     { label: 'Skills', sectionId: 'skills' },
     { label: 'Experience', sectionId: 'experience' },
+    { label: 'Education', sectionId: 'education' },
     { label: 'Projects', sectionId: 'projects' },
     { label: 'Contact', sectionId: 'contact' }
   ];
