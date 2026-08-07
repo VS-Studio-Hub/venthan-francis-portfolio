@@ -799,6 +799,7 @@ p {
   gap: 2rem;
   grid-template-columns: 1fr;
   padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .education-card strong {
