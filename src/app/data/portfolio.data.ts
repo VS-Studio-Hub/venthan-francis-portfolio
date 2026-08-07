@@ -371,14 +371,22 @@ export const projects: Project[] = [
   }
 ];
 
-export const education: Education = {
-  school: 'Conestoga College',
-  program: 'Game Design',
-  result: 'Graduated with Distinction',
-  summary:
-    'The program strengthened practical programming, game systems, user-interface development, debugging, project delivery, version control, and team collaboration skills.',
-  topics: ['Programming', 'Game systems', 'User-interface development', 'Debugging', 'Project development', 'Version control', 'Teamwork']
-};
+export const education: Education[] = [
+  {
+    school: 'Conestoga College',
+    program: 'Game Design',
+    result: 'Graduated with Distinction',
+    summary:
+      'The program strengthened practical programming, game systems, user-interface development, debugging, project delivery, version control, and team collaboration skills.',
+    topics: ['Programming', 'Game systems', 'User-interface development', 'Debugging', 'Project development', 'Version control', 'Teamwork']
+  },
+  {
+    school: 'Subbalakshmi Lakshmipathy College of Science',
+    program: 'Graphic Design',
+    result: "Bachelor's Degree",
+    dates: 'Jun 2019 - Mar 2022'
+  }
+];
 
 export const certifications: Certification[] = [
   {

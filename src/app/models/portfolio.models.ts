@@ -60,8 +60,9 @@ export interface Education {
   school: string;
   program: string;
   result: string;
-  summary: string;
-  topics: string[];
+  dates?: string;
+  summary?: string;
+  topics?: string[];
 }
 
 export interface Certification {

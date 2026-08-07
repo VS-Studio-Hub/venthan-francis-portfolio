@@ -4,20 +4,31 @@
       <p class="eyebrow">Education</p>
       <h2>Academic background in game design.</h2>
     </div>
-    <article class="education-card reveal">
-      <div>
-        <h3>{{ data.education.school }}</h3>
-        <p>{{ data.education.program }}</p>
-        <strong>{{ data.education.result }}</strong>
-      </div>
-      <div>
-        <p>{{ data.education.summary }}</p>
-        <div class="tag-list">
-          @for (topic of data.education.topics; track topic) {
-            <span>{{ topic }}</span>
+    @for (school of data.education; track school.school) {
+      <article class="education-card reveal">
+        <div>
+          <h3>{{ school.school }}</h3>
+          <p>{{ school.program }}</p>
+          <strong>{{ school.result }}</strong>
+          @if (school.dates) {
+            <span class="education-dates">{{ school.dates }}</span>
           }
         </div>
-      </div>
-    </article>
+        @if (school.summary || school.topics?.length) {
+          <div>
+            @if (school.summary) {
+              <p>{{ school.summary }}</p>
+            }
+            @if (school.topics?.length) {
+              <div class="tag-list">
+                @for (topic of school.topics; track topic) {
+                  <span>{{ topic }}</span>
+                }
+              </div>
+            }
+          </div>
+        }
+      </article>
+    }
   </div>
 </section>

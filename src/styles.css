@@ -805,6 +805,12 @@ p {
   color: var(--green);
 }
 
+.education-dates {
+  display: block;
+  color: var(--muted);
+  margin-top: 0.35rem;
+}
+
 .cert-grid {
   grid-template-columns: 1fr;
 }
